@@ -1,0 +1,33 @@
+.postForm {
+	// min-width: 300px;
+	border-radius: 9px;
+	background-color: white;
+	padding: 30px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px 0;
+
+
+	.file {
+		width: 100%;
+		padding: 2px;
+		height: 2rem;
+		background-color: #63edffb3;
+		border-radius: 4px;
+		cursor: pointer;
+		font-weight: 300;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0 10px;
+	}
+
+	.wrapper {
+		input {
+			flex-grow: 1;
+		}
+	}
+
+}

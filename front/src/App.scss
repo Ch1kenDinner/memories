@@ -1,0 +1,127 @@
+
+.app > * {
+	min-height: 100vh;
+}
+
+// input:not([type=file]) {
+// 	outline: none;
+// 	border: 1px solid rgba(0, 0, 0, 0.3);
+// 	padding: 10px;
+// 	border-radius: 4px;
+
+// 	transition: all 0.3s ease;
+
+// 	&:not([class=required]):focus {
+// 		border-color: rgba(0, 0, 0, 0.7);
+// 		transition: all 0.7s ease;
+// 	}
+// }
+
+button {
+	outline: none;
+	border: none;
+
+	&:not([disabled]) {
+		cursor: pointer;
+	}
+}
+
+
+input[type=file] {
+	width: 0;
+	height: 0;
+}
+
+input {
+	outline: none;
+}
+
+input, label, .wrapper {
+	&.required {
+		outline: 2px solid rgba(255, 0, 0, 1);
+	}
+}
+
+
+.taWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+
+	.ta {
+		width: min-content;
+		padding-bottom: 10px;
+
+		font-size: 0.8rem;
+
+		&::before {
+			content: '#'
+		}
+	}
+}
+
+
+.inputWrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 0 5px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	// padding: 10px;
+	border-radius: 4px;
+	width: 100%;
+	height: 50px;
+
+	transition: all 0.3s ease;
+
+	&:focus-within {
+		border-color: rgba(0, 0, 0, 0.7);
+		transition: all 0.7s ease;
+	}
+
+	&:not([disabled]).required {
+		border-color: red;
+	}
+
+	input {
+		border: none;
+		outline: none;
+		height: 100%;
+		flex-grow: 1;
+		margin: 10px;
+	}
+
+	.errorMessage {
+		color: red;
+		font-size: 0.7rem;
+		white-space: nowrap;
+	}
+}
+
+.inputButton {
+	height: 100%;
+	min-width: 40px;
+}
+
+button[type=submit] {
+	background-color: white;
+	border-radius: 48px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	letter-spacing: 1px;
+	font-weight: bold;
+
+	text-transform: uppercase;
+
+	transition: border-color 0.3s ease;
+
+	&:not([disabled]) {
+		cursor: pointer;
+
+		&:hover {
+			border-color: rgba(0, 0, 0, 0.7);
+			transition: border-color 0.7s ease;
+		}
+	}
+}

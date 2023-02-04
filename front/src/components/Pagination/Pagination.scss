@@ -1,0 +1,48 @@
+$color: rgba(255, 255, 255, 0.7);
+$height: 30px;
+
+.pagination {
+	max-width: 100%;
+	// width: max-content;
+	// height: $height;
+	overflow-x: hidden;
+
+	// width: min-content;
+	// border: 1px solid $color;
+
+	color: $color;
+	font-size: 1.2rem;
+
+	display: flex;
+
+	.items {
+		display: flex;
+		// flex-wrap: wrap;
+		// justify-content: flex-end;
+	}
+
+	.item {
+		display: flex;
+		min-width: 30px;
+		height: $height;
+		justify-content: center;
+		align-items: center;
+
+		color: inherit;
+
+		border: 1px solid $color;
+
+		& +.item {
+				border-left: none;
+			}
+
+		&.current {
+			background: white;
+			color: black
+		}
+	}
+
+	.dots, .end {
+		display: flex;
+	}
+}

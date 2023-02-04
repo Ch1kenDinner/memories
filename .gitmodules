@@ -1,0 +1,3 @@
+[submodule "memories_front"]
+	path = memories_front
+	url = https://github.com/Ch1kenDinner/memories_front

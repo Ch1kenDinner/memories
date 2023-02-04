@@ -1,0 +1,32 @@
+.search {
+	background: white;
+	border-radius: 48px;
+	display: flex;
+	overflow: hidden;
+	padding: 5px 10px;
+	height: 100%;
+
+	input {
+		border: none;
+		width: 100%;
+		height: inherit;
+	}
+
+	button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+
+		position: relative;
+		// height: 30px;
+		&::before {
+			content: '';
+			height: 50%;
+			width: 1px;
+			background: rgba(0, 0, 0, 0.3);
+			position: absolute;
+			left: 0;
+		}
+	}
+}

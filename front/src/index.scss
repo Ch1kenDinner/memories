@@ -1,0 +1,39 @@
+
+body {
+	background: linear-gradient(to right bottom, #ECB365, #f39f2a) no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+
+	& * {
+		font-family: 'Lato', sans-serif;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	object-fit: cover;
+	height: 100%;
+	width: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	background: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+
+:root {
+	--green-active: rgba(0, 128, 0, 0.7)
+}

@@ -1,0 +1,52 @@
+$hei: 40px;
+// $wid: 40px;
+
+.commentForm {
+	border-radius: 48px;
+	border: 1px solid black;
+	border-style: solid solid solid solid;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+
+	height: $hei;
+	min-width: 300px;
+
+	.user {
+		padding: 0;
+		height: 100%;
+		margin-left: 1px;
+		img {
+			border-radius: 50%;
+			height: 100%;
+			width: auto;
+		}
+	}
+	
+	textarea {
+		border: none;
+		flex-grow: 1;
+		resize: none;
+		height: $hei * 0.9;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	button {
+		border-radius: 50%;
+		border: 1px solid rgba(0, 0, 0, 0.7);
+		width: $hei;
+		height: $hei;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 2;
+		svg {
+			width: 15px;
+			height: 15px;
+		}
+	}
+}
